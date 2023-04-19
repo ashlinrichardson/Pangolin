@@ -78,7 +78,7 @@ cd Pangolin
 ./scripts/install_prerequisites.sh recommended
 
 # Configure and build
-cmake -B build
+cmake -DBUILD_PANGOLIN_LIBOPENEXR=OFF -B build -GNinja            # cmake -B build
 cmake --build build
 
 # with Ninja for faster builds (sudo apt install ninja-build)
